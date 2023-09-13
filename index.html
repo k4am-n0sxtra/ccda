@@ -60,7 +60,9 @@ form.addEventListener('submit', e => {
 }).bind(this);
 
 function updateSheet(name, email, price) {
-  // Code to update Google Sheet  
+  fetch('https://script.google.com/macros/s/AKfycbwRcrjpkYpia4vESmlI-OdwohKhRQzwNTsm84cgYEYz9Q2yMdv4K5f94ZYvEVKmzGAn/exec', {
+      method: 'POST',
+      body: new FormData(form)
 }
 </script>
 
